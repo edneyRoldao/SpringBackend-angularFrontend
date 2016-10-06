@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+	<title>Test Ajax</title>
+</head>
+<script type="text/javascript">
+	var get = function(url, callback) {
+		var xhr = new XMLHttpRequest();
+		xhr.onreadystatechange = function() {
+			if(xhr.readyState === 4) 
+				callback(xhr.responseText, xhr.status);
+		};
+		xhr.open('GET', url);
+		xhr.send(null);
+	};
+
+	get("http://localhost:9090/contatosWS/", function(data) {
+		document.getElementById("ajaxID01").innerHTML = data;
+	});
+
+	get("http://localhost:9090/contatosWS/", function(data) {
+		document.getElementById("ajaxID02").innerHTML = data;
+	});	
+</script>
+<body>
+
+	<h1>Test Ajax</h1>
+	<br/>
+
+	<h4>Test 01</h4>
+	<div id="ajaxID01"></div>
+	<br/>
+
+	<h4>Test 02</h4>
+	<div id="ajaxID02"></div>
+
+</body>
+</html>
