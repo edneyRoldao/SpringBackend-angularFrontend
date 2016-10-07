@@ -1,5 +1,9 @@
 package com.edn.repository;
 
-public interface OperadoraRepository {
+import org.springframework.data.jpa.repository.JpaRepository;
+
+import com.edn.model.Operadora;
+
+public interface OperadoraRepository extends JpaRepository<Operadora, Integer>{
 
 }
