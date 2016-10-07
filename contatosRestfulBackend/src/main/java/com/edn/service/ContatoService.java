@@ -4,6 +4,11 @@ import java.util.List;
 
 import com.edn.model.Contato;
 
+/**
+ * 
+ * @author eroldao
+ *
+ */
 public interface ContatoService {
 
 	void createAndUpdate(Contato contato);

@@ -20,6 +20,15 @@ import org.springframework.orm.jpa.vendor.Database;
 import org.springframework.orm.jpa.vendor.HibernateJpaVendorAdapter;
 import org.springframework.transaction.annotation.EnableTransactionManagement;
 
+/**
+ * Database configurations are here, even SpringData requirements.
+ * 
+ * We are using an embedded database in order to make an application more easy.
+ * Every time that we start this application, the same database script is loaded.
+ * 
+ * @author eroldao
+ *
+ */
 @Configuration
 @EnableTransactionManagement
 public class SpringDataJpaConfig {

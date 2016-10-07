@@ -4,6 +4,11 @@ import java.util.List;
 
 import com.edn.model.Operadora;
 
+/**
+ * 
+ * @author eroldao
+ *
+ */
 public interface OperadoraService {
 
 	void createAndUpdate(Operadora operadora);

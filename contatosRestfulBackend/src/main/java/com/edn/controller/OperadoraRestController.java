@@ -15,6 +15,14 @@ import org.springframework.web.bind.annotation.RestController;
 import com.edn.model.Operadora;
 import com.edn.service.OperadoraService;
 
+/**
+ * This is a simple restful controller.
+ * 
+ * You must realize that we are using news annotations that were included from spring framework release 4.3.1
+ * 
+ * @author eroldao
+ *
+ */
 @RestController
 @RequestMapping("/operadoras")
 public class OperadoraRestController {

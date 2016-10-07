@@ -1,5 +1,9 @@
 # Spring as backend and Angular as Frontend
 
+This webservice restful project is used as backend for an angularJS project. Environment:
+<br/>
+JDK 1.8,
+
 Some references:
 <br/>
 http://enos.itcollege.ee/~jpoial/allalaadimised/lugemist/Spring-Data-Programming-Cookbook.pdf

@@ -9,6 +9,11 @@ import org.springframework.transaction.annotation.Transactional;
 import com.edn.model.Contato;
 import com.edn.repository.ContatoRepository;
 
+/**
+ * 
+ * @author eroldao
+ *
+ */
 @Service
 @Transactional
 public class ContatoServiceImpl implements ContatoService {
