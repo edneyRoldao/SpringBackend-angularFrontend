@@ -6,6 +6,11 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
+/**
+ * 
+ * @author edneyroldao
+ *
+ */
 @Entity
 public class Operadora implements Serializable {
 	private static final long serialVersionUID = 1L;

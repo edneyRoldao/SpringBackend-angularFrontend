@@ -9,7 +9,6 @@ import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter
 
 /**
  * The whole web configuration must be implemented in thi class.
- * 
  * Here we have: SpringData configuration
  * 
  * @author eroldao

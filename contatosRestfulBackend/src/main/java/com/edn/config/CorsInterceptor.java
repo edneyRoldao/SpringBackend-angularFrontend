@@ -8,7 +8,8 @@ import org.springframework.web.servlet.handler.HandlerInterceptorAdapter;
 /**
  * This project is a simple academic example, so I'm using this interceptor
  * to avoid the same origin policy applied by most browsers.
- * I think that although I'm using this interceptor, the HTTP verbs POST and PUT doesn't work on google, Then we need to use firefox.
+ * I think that although I'm using this interceptor, the HTTP verbs POST and PUT doesn't work on google, 
+ * Then we need to use firefox.
  * 
  * @author eroldao
  *

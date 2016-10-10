@@ -10,7 +10,11 @@ import javax.persistence.ManyToOne;
 import javax.persistence.Temporal;
 import javax.persistence.TemporalType;
 
-
+/**
+ * 
+ * @author edneyroldao
+ *
+ */
 @Entity
 public class Contato implements Serializable {
 	private static final long serialVersionUID = 1L;
