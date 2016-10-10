@@ -2,6 +2,7 @@ package com.edn.config;
 
 import java.sql.Connection;
 import java.sql.SQLException;
+import java.util.Properties;
 
 import javax.sql.DataSource;
 
@@ -47,9 +48,10 @@ public class SpringDataJpaConfig {
 		adapter.setGenerateDdl(true);
 		
 		LocalContainerEntityManagerFactoryBean factory = new LocalContainerEntityManagerFactoryBean();
+		factory.setDataSource(dataSource());
 		factory.setJpaVendorAdapter(adapter);
 		factory.setPackagesToScan("com.edn.model");
-		factory.setDataSource(dataSource());
+		factory.setJpaProperties(getProperties());
 		
 		return factory;
 	}
@@ -78,6 +80,13 @@ public class SpringDataJpaConfig {
 		}
 		
 		return populator;
+	}
+	
+	private Properties getProperties() {
+		Properties props = new Properties();
+		props.setProperty("hibernate.show_sql", "true");
+		
+		return props;
 	}
 	
 }
